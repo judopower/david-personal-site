@@ -1,0 +1,123 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="styles.main/css">
+	</head>
+	<style>
+
+		body {
+			background-color: #fa8072;
+	    	font-family: "Geo Sans Light";
+	    	font-size: 2em;
+		}
+
+		.landing-header {
+			text-align: center;
+			font-size: 3.5em;
+		}
+
+		.intro-header  {
+			padding: 5%;
+		}
+
+		.nav li {
+			margin: -5px;
+		}
+
+		.nav li .navTileContent {
+			color: #e1e8f4;	
+			text-align: center;	
+			padding: 12px;	
+		} 
+
+		.nav li .navTileContent p {
+			padding-left: 20px;
+			display: inline;
+		}
+
+		.about {
+			background-color: #6ad8d1;
+		}
+
+		.portfolio {
+			background-color: #12d132;
+
+		}
+
+		.art {
+			background-color: #12466b;
+		}
+
+		.contact {
+			background-color: #0d336d;
+		}
+
+
+		@media screen and (min-width: 768px) {
+			.landing-header {
+				font-size: 3em;
+			}
+			.intro-header {
+				text-align: center;
+				font-size: 1.5em;
+			}
+		}
+
+
+	</style>
+	<body>
+
+		<div class="container-fluid">
+			<div>
+				<h1 class="landing-header">David Ahn</h1>
+					<div class="intro-header">
+						<h3>I develop websites</h3>
+						<h4>and write music</h4>
+						<h4>and blog</h4>
+						<h5>and stuff</h5>
+					</div>
+			</div>
+
+			<nav class="navbar navbar-fixed-bottom">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="about"><a href="about.html"><div class="navTileContent"><i class="glyphicon glyphicon-user" aria-hidden="true"></i><p>about</p></div></a></li>
+ 					<li class="portfolio"><a href="portfolio.html"><div class="navTileContent"><i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i><p>portfolio</p></div></a></li>
+					<li class="art"><a href="art.html"><div class="navTileContent"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i><p>art</p></div></a></li>
+					<li class="contact"><a href="contact.html"><div class="navTileContent"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><p>contact</p></div></a></li>
+				</ul>
+			</nav>	
+		</div>
+
+
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script>
+			var navResponsive = function() {
+			    if ($(window).width() > 320) {
+			        $('.navbar').addClass('navbar-fixed-left').removeClass('navbar-fixed-bottom');
+			};
+
+			$(window).on('resize', navResponsive);
+		</script>
+	</body>
+</html>
