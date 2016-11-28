@@ -9,32 +9,99 @@
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-		<link rel="stylesheet" href="styles.main/css">
+		<link rel="stylesheet" type="text/css" href="css-files/styles.css">
 	</head>
 	<style>
-
 		body {
-			background: salmon;
-	    	font-family: "Geo Sans Light";
-		}	
+			background: #6799cc;
+			font-family: "Geo Sans Light";
+			margin: 0;
+			padding: 0;
+		}
+		#about-content {
+			margin-top: 2em;
+			margin-left: auto;
+		    margin-right: auto;
+		    margin-bottom: 5em;
+			max-width: 300px;
+			color: #fff;
+		}
 
+		#about-pic {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			}
+
+		.about-header {
+			text-align: center;
+		}
+
+		.download-button {
+			text-align: center;
+		}
+
+		@media screen and (min-width: 667px) {
+
+			#about-content {
+				position: relative;
+				margin: 2em auto 6em;
+				left: 100px;
+				max-width: 625px;
+				font-size: 1.5em;
+			}
+			#about-pic {
+				float: right;
+			}
+			.about-header {
+				text-align: left;
+			}
+			.download-button {
+				margin: 60px auto 60px;
+				text-align: left;
+			}
+			.cleared-about-text{
+				clear: both;
+			}
+		}
 	</style>
 	<body>
-		<div class="container-fluid">
-
-
-
+		<div id="about-content">
+			<img id="about-pic" src="images/about-profile-pic.jpg">
+			<h1 class="about-header">About</h1>
+			<div class="download-button"><a href=" ">Download Resume Button Goes Here</a></div>
+			<div class="about-text">
+				<p>Hey there, folks. My name is David Choi. I play music, train MMA, write political opinions, and develop web stuff.</p>
+				<section class="cleared-about-text"><p>I enjoy acquiring new skills and knowledge and growing as a person.</p>
+				<p>I like artists such as Grimes, the Smiths, Radiohead, and Car Seat Headrest.</p>
+				<p>Here are some of the areas in which I have some skill:</p>
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>JavaScript</li>
+					<li>JQuery</li>
+					<li>BootStrap</li>
+					<li>Responsive Design</li>
+					<li>WordPress</li>
+					<li>SEO</li>
+					<li>Adobe Illustrator</li>
+					<li>REAPER DAW</li>
+				</ul>
+				<p>I hope some of these skills might be of use to you and that we may set up some sort of arrangement in which we agree that I provide labor using some of these skills in exchange for monetary compensation of some sort. If that sounds agreeable to you, please click the Contact button to find get in touch with me. Thank you!</p></section>
+			</div>
 		</div>
+
+		<nav>
+			<ul>
+				<li class="home"><a href="index.html"><div class="navTile"><img class="navIcon active" src="images/home-icon-inactive.png"><p>Home</p></div></a></li>
+				<li class="about selected"><a href="about.html"><div class="navTile"><img class="navIcon active" src="images/about-icon-active.png" style="display: inline;"><img class="navIcon inactive" src="images/about-icon-inactive.png" style="display: none;"><p>About</p></div></a></li>
+				<li class="portfolio"><a href="portfolio.html"><div class="navTile"><img class="navIcon inactive" src="images/portfolio-icon-active.png" style="display: none;"><img class="navIcon inactive" src="images/portfolio-icon-inactive.png" style="display: inline;"><p>Portfolio</p></div></a></li>
+				<li class="art"><a href="art.html"><div class="navTile"><img class="navIcon active" src="images/art-icon-active.png" style="display: none;"><img class="navIcon inactive" src="images/art-icon-inactive.png" style="display: inline;"><p>Art</p></div></a></li>
+				<li class="contact"><a href="contact.html"><div class="navTile"><img class="navIcon active" src="images/contact-icon-active.png" style="display: none;"><img class="navIcon inactive" src="images/contact-icon-inactive.png" style="display: inline;"><p>Contact</p></div></a></li>
+			</ul>
+		</nav>
 
 		<script src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
 
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	</body>
+</body>
 </html>
