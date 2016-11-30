@@ -26,6 +26,11 @@
 		height: 50px;
 		text-align: center;
 		box-sizing: border-box;
+		font-family: 'Josefin Sans', sans-serif;
+	}
+
+	nav li a {
+    text-decoration: none;
 	}
 
 	nav li a p {
